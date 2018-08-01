@@ -10,9 +10,11 @@ export default {
       required: true,
     },
     style: {
-      type: String,
       default: function(){
-        return 'width: 10px; height: 10px'
+        return {
+          width: '20px',
+          height: '20px'
+        }
       }
     }
   }
@@ -20,10 +22,10 @@ export default {
 </script>
 
 <style>
-/* img {
-  width: 10px;
-  height: 10px;
-} */
+img{
+  /* background-color: red; */
+  object-fit: fill;
+}
 </style>
 
 
