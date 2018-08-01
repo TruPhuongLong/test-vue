@@ -1,6 +1,6 @@
 <template>
-    <button>
-        <icon :name="icon" :style="style"/>
+    <button :style="style">
+        <icon :name="icon" />
     </button>
 </template>
 
@@ -8,7 +8,17 @@
 import icon from './icon.vue'
 export default {
     components: {icon},
-    props: ['icon', 'style']
+    props: {
+        icon: String,
+        style: {
+            default(){
+                return {
+                    width: '20px',
+                    height: '20px'
+                }
+            }
+        }
+    }
 }
 </script>
 
@@ -16,6 +26,7 @@ export default {
 button{
     background-color: transparent;
     border: none;
+    padding: 0px;
 }
 </style>
 

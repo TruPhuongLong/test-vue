@@ -1,5 +1,5 @@
 <template>
-    <img :src="require('../assets/' + name)" :alt="name" :style="style"/>
+    <img :src="require('../assets/' + name)" :alt="name" />
 </template>
 
 <script>
@@ -7,24 +7,16 @@ export default {
   props: {
     name: {
       type: String,
-      required: true,
-    },
-    style: {
-      default: function(){
-        return {
-          width: '20px',
-          height: '20px'
-        }
-      }
+      required: true
     }
   }
 };
 </script>
 
 <style>
-img{
-  /* background-color: red; */
-  object-fit: fill;
+img {
+  width: 100%;
+  height: auto;
 }
 </style>
 

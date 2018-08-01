@@ -1,7 +1,7 @@
 <template>
     <div>
-        <btn-icon icon="menu.png" :style="{width: '50px', height: '50px', 'background-color': 'green'}"></btn-icon>
-        <btn-icon icon="logo.png" :style="{width: '100px', height: '100px'}"></btn-icon>
+        <btn-icon icon="menu.png" :style="{width: '30px', height: '30px'}"></btn-icon>
+        <btn-icon icon="logo.png" :style="{width: '50px', height: '50px'}"></btn-icon>
         <btn-icon icon="search.png" ></btn-icon>
         <btn-icon icon="heart.png" ></btn-icon>
         <btn-icon icon="shopping-cart.png" ></btn-icon>
