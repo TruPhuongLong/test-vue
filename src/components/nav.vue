@@ -1,14 +1,18 @@
 <template>
     <div>
-        nav
-        <icon name="search.png" ></icon>
+        <btn-icon icon="menu.png" style="width: 50px; height: 50px"></btn-icon>
+        <btn-icon icon="logo.png" ></btn-icon>
+        <btn-icon icon="search.png" ></btn-icon>
+        <btn-icon icon="heart.png" ></btn-icon>
+        <btn-icon icon="shopping-cart.png" ></btn-icon>
+        <btn-icon icon="user.png" ></btn-icon>
     </div>
 </template>
 
 <script>
-import icon from './icon.vue';
+import btnIcon from './btn-icon.vue';
 export default {
-    components: {icon}
+    components: {btnIcon}
 }
 </script>
 
