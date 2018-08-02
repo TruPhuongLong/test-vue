@@ -1,5 +1,5 @@
 <template>
-    <div id="nav">
+    <div id="nav-container">
         <btn-icon class="left" icon="menu.png" :style="{width: '30px', height: '30px'}"></btn-icon>
         <btn-icon class="bettwen" icon="logo.png" :style="{width: '50px', height: '50px'}"></btn-icon>
         <span class="right">
@@ -19,7 +19,7 @@ export default {
 </script>
 
 <style>
-#nav{
+#nav-container{
     text-align: center;
 }
 
