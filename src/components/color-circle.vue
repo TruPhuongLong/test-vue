@@ -17,8 +17,8 @@ export default {
 
 <style>
 #color{
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
     margin: 5px;
 }
