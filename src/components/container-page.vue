@@ -6,7 +6,7 @@
         </div>
         <div class="container-80">
             <div>
-                left
+                <color-list :item-source="listColor"></color-list>
             </div>
 
             <div>
@@ -20,10 +20,13 @@
 import navBar from './nav.vue'
 import category from './category.vue'
 import productList from './product-list.vue'
+import colorList from './color-list.vue'
+
 export default {
-    components: {navBar, category, productList},
+    components: {navBar, category, productList, colorList},
     data(){
         return {
+            listColor: ['black', 'yellow', 'blue', 'red', 'green', 'pink', 'gray'],
             listProducts: [
                 {id: 0, url: "../assets/watch.jpg", name: 'Watch', price: '20'},
                 {id: 1, url: "../assets/watch.jpg", name: 'Watch', price: '20'},
@@ -45,14 +48,10 @@ export default {
 #container-page > div.container-80 > div:first-child {
     float: left;
     width: 25%;
-    background-color: red;
-    height: 500px;
 }
 #container-page > div.container-80 > div:last-child {
     float: left;
     width: 75%;
-    background-color: yellow;
-    height: 500px;
 }
 </style>
 
